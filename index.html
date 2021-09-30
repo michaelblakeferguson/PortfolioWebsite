@@ -115,6 +115,12 @@
 		float: left;
 	}
 	
+	.clearance
+	{
+		margin: 0px 0px 0px 0px;
+		text-align: center;
+	}
+	
 	.abet
 	{
 		margin: 70px 10px 0px 0px;
@@ -324,7 +330,7 @@
 			<div style="clear: both;"></div>
 			<hr class=line>
 			<div class=checkout>
-				<a href="https://jsfiddle.net/2qzmh3k4" target="_blank">Check out the source code for this website</a>
+				<a href="https://jsfiddle.net/ctx4y38b/" target="_blank">Check out the source code for this website</a>
 			</div>
 			<div class=download>
 				<a href="Resume.pdf" target="_blank" download>Download a PDF of my resume</a>
@@ -342,6 +348,17 @@
 					<ul>
 						<li>In progress</li>
 					</ul>
+				</tr>
+				
+				<div>
+					<p class="name">Clearance - Secret</p>
+					<p class="date">September 2021</p>
+				</div>
+				<div style="clear: both;"></div>
+				<tr>
+					<div class=clearance>
+						<img src="clearance.png" alt="secret" width="155" height="155">
+					</div>
 				</tr>
 			
 				<div>
@@ -403,16 +420,16 @@
 						</div>
 					</div>
 				</tr>
-				<!-- <div>
+				<div>
 					<p class="name">Fidelity Technology Corporation - Software/Systems Engineer I</p>
 					<p class="date">June 2021 - Current</p>
 				</div>
 				<div style="clear: both;"></div>
 				<tr>
 					<ul>
-						<li>Maintain and develop new software for multiple E-6B Mercury simulators for the Navy at Tinker AFB. This includes a level-D OFT simulator and a maintenance trainer. Responsibilities include developing C++ & FORTRAN code, installing hardware, and network security for the site.</li>
+						<li>Maintain and develop new software for multiple E-6B Mercury simulators for the Navy at Tinker AFB. This includes a level-D OFT simulator and a maintenance trainer. Responsibilities include developing C++ & FORTRAN code, debugging hardware, and providing DoD 8570 compliant network security for the site.</li>
 						<div class="row">
-							<div class="column" style="margin:2px 0px 0px 183px">
+							<div class="column" style="margin:0px 0px 0px 183px">
 								<img src="e6bmercury.jpg" style="border-style: solid; border-width: medium; border-color: black;width: 109%" onclick="openModal6();currentSlide6(1)" class="hover-shadow cursor">
 							</div>
 							<div class="column" style="margin:0px 0px 0px 50px">
@@ -449,7 +466,7 @@
 							</div>
 						</div>
 					</ul>
-				</tr> -->
+				</tr>
 				<div>
 					<p class="name">Oklahoma State University - B.S. Computer Engineering</p>
 					<p class="date">Spring 2021</p>
@@ -457,7 +474,7 @@
 				<div style="clear: both;"></div>
 				<tr>
 					<div class=osuseal>
-						<img src="seal.png" alt="seal" width="125" height="125" style="float:left">
+						<img src="seal.png" alt="seal" width="125" height="125">
 					</div>
 					<div class=abet>
 						<img src="abet.png" alt="abet" width="180" height="63">
@@ -540,7 +557,7 @@
 				<div style="clear: both;"></div>
 				<tr>
 					<div class=osuseal>
-						<img src="seal.png" alt="seal" width="125" height="125" style="float:left">
+						<img src="seal.png" alt="seal" width="125" height="125">
 					</div>
 					<div class=abet>
 						<img src="abet.png" alt="abet" width="180" height="63">
@@ -1130,7 +1147,7 @@
 				}
 				
 				//Fidelity
-				/*function openModal6()
+				function openModal6()
 				{
 					document.getElementById("myModal6").style.display = "block";	
 				}
@@ -1179,7 +1196,7 @@
 					slides6[slideIndex6-1].style.display = "block";
 					dots6[slideIndex6-1].className += " active";
 					captionText6.innerHTML = dots6[slideIndex6-1].alt;
-				}*/
+				}
 				
 				$('#button').click(function()
 				{
