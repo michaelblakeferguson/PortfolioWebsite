@@ -457,7 +457,45 @@
 				<div style="clear: both;"></div>
 				<tr>
 					<ul>
-						<li>Working on B-52 & B-2 programs.</li>
+						<li>Working on B-52 Stratofortress & B-2 Spirit programs.</li>
+
+                                                <div class="row">
+							<div class="column" style="margin:0px 0px 0px 183px">
+								<img src="b52.jpg" style="border-style: solid; border-width: medium; border-color: black;width: 109%" onclick="openModal7();currentSlide7(1)" class="hover-shadow cursor">
+							</div>
+							<div class="column" style="margin:0px 0px 0px 50px">
+								<img src="b2.jpg" style="border-style: solid; border-width: medium; border-color: black;width: 106%" onclick="openModal7();currentSlide7(2)" class="hover-shadow cursor">
+							</div>
+						</div>
+					
+						<div id="myModal7" class="modal">
+							<span class="close cursor" onclick="closeModal7()">&times;</span>
+							<div class="modal-content">
+							
+								<div class="mySlides7">
+									<div class="numbertext">1 / 2</div>
+									<img src="b52.jpg" style="width:100%">
+								</div>
+								<div class="mySlides7">
+									<div class="numbertext">2 / 2</div>
+									<img src="b2.jpg" style="width:100%">
+								</div>
+							
+								<a class="prev" onclick="plusSlides7(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides7(1)">&#10095;</a>
+								
+								<div class="caption-container">
+									<p id="caption7"></p>
+								</div>
+							
+								<div class="column">
+									<img class="demo7 cursor" src="b52.jpg" style="width:100%" onclick="currentSlide7(1)" alt="B-52 Stratofortress">
+								</div>
+								<div class="column">
+									<img class="demo7 cursor" src="b2.jpg" style="width:75%" onclick="currentSlide7(2)" alt="B-2 Spirit">
+								</div>
+							</div>
+						</div>
 					</ul>
 				</tr>
 				
@@ -1419,6 +1457,58 @@
 					slides6[slideIndex6-1].style.display = "block";
 					dots6[slideIndex6-1].className += " active";
 					captionText6.innerHTML = dots6[slideIndex6-1].alt;
+				}
+
+                                //Boeing 2
+                                function openModal7()
+				{
+					document.getElementById("myModal7").style.display = "block";	
+				}
+				function closeModal7()
+				{
+					document.getElementById("myModal7").style.display = "none";
+				}
+				
+				var slideIndex7 = 1;
+				showSlides7(slideIndex7);
+
+                                function plusSlides7(n)
+				{
+					showSlides7(slideIndex7 += n);
+				}
+				function currentSlide7(n)
+				{
+					showSlides7(slideIndex7 = n);
+				}
+				function showSlides7(n)
+				{
+					var i7;
+					var slides7 = document.getElementsByClassName("mySlides7");
+					var dots7 = document.getElementsByClassName("demo7");
+					var captionText7 = document.getElementById("caption7");
+					if (n > slides7.length)
+					{
+						slideIndex7 = 1
+					}
+					
+					if (n < 1)
+					{
+						slideIndex7 = slides7.length
+					}
+					
+					for (i7 = 0; i7 < slides7.length; i7++)
+					{
+						slides7[i7].style.display = "none";
+					}
+					
+					for (i7 = 0; i7 < dots7.length; i7++)
+					{
+						dots7[i7].className = dots7[i7].className.replace(" active", "");
+					}
+					
+					slides7[slideIndex7-1].style.display = "block";
+					dots7[slideIndex7-1].className += " active";
+					captionText7.innerHTML = dots7[slideIndex7-1].alt;
 				}
 				
 				$('#button').click(function()
